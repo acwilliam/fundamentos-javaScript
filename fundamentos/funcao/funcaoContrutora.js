@@ -8,7 +8,7 @@ function Carro (velocidadeMaxima = 200, delta = 5){
 
         //this torna o metodo publico
     this.acelerar = function() {
-        if(velocidadeAtual <= velocidadeMaxima) {
+        if(velocidadeAtual + delta <= velocidadeMaxima) {
             velocidadeAtual += delta;
         } else {
             velocidadeAtual = velocidadeMaxima;
